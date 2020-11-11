@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:smoge/app/app_icons.dart';
 
 abstract class _Constants {
   static const double iconSize = 30;
@@ -85,6 +86,7 @@ class ActivityWidget extends StatelessWidget {
               title,
               maxLines: 1,
               overflow: TextOverflow.ellipsis,
+              style: Theme.of(context).textTheme.bodyText2,
             ),
           )
         ],
@@ -98,7 +100,7 @@ class ActivityWidget extends StatelessWidget {
         return Container(
           width: _Constants.badgeSize,
           height: _Constants.badgeSize,
-          child: Image.asset("assets/images/icon_warning.png"),
+          child: Image.asset(AppIcons.warning),
         );
     }
 
